@@ -1,13 +1,13 @@
 // Your web app's Firebase configuration
 var firebase=require('firebase');
 var firebaseConfig = {
-    apiKey: "AIzaSyCSyjSHoTBRvxotLy09oxB3-lZ4UitiDyc",
-    authDomain: "rdata-69dfd.firebaseapp.com",
-    databaseURL: "https://rdata-69dfd.firebaseio.com",
-    projectId: "rdata-69dfd",
-    storageBucket: "rdata-69dfd.appspot.com",
-    messagingSenderId: "64543873477",
-    appId: "1:64543873477:web:f6e103209f44670f"
+    apiKey: "api-key",
+    authDomain: "auth-domain",
+    databaseURL: "url",
+    projectId: "project-id",
+    storageBucket: "str-bucket",
+    messagingSenderId: "sender-id",
+    appId: "ap-id"
 };    
 function app_fireBase() {
     firebase.initializeApp(firebaseConfig) ;
