@@ -22,11 +22,14 @@ exports.get_one_api=function(req,res){
 // }
 
 exports.delete_api=function(req,res){
-
+    db.ref("/api").child(req.params.id).remove();
+    return res.send("API supprimee avec succes");
 }
 exports.new_api=function(req,res){
 
 }
-exports.update_info_api=function(req,res){
+exports.update_info_api=function(req, res, data){
+    db.ref("/api").child(req.params.id).update(data);
+    return res.send("ok");
 
 }
